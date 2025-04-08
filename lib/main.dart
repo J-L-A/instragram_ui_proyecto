@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'instagram_profile_screen.dart';
+import 'instagram_login_screen.dart';
 
 void main() {
   runApp(MyApp()); // Por favor correr el proyecto en Chrome
@@ -14,8 +14,10 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
+        // Pantalla de login similar a la de Instagram
+        fontFamily: 'Roboto',
       ),
-      home: InstagramProfileScreen(),
+      home: InstagramLoginScreen(),
     );
   }
 }
